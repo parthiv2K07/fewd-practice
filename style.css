@@ -1,125 +1,68 @@
-/* Reset */
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Body */
 body {
-  background: #1c1c1c;
-  color: #f5f5f5;
-  line-height: 1.6;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  line-height: 1.7;
+  padding: 20px;
 }
 
 /* Header */
 header {
-  background: #ff4b2b;
-  padding: 5px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #0d6efd; /* Blue heading */
+  margin-bottom: 10px;
 }
 
-/* Main Section */
+header p {
+  font-size: 1rem;
+  color: #555555;
+}
+
+/* Main content */
 main {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* Form Section */
-.movie-form {
-  background: #2e2e2e;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-.movie-form h2 {
-  margin-bottom: 15px;
-}
-
-.movie-form input {
-  font-weight: bold;
-  padding: 10px;
-  margin: 5px;
-  border: 2px solid #ff4b2b;
-  border-radius: 5px;
-  width: calc(30% - 10px);
-}
-
-.movie-form button {
-  padding: 10px 15px;
-  background: #ff4b2b;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-}
-
-.movie-form button:hover {
-  background: #ff6f61;
-}
-
-/* Movie List */
-.movie-list {
-  background: #2e2e2e;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.movie-list h2 {
-  margin-bottom: 15px;
-}
-
-.movie-list ul {
-  list-style: none;
-}
-
-.movie-list li {
-  background: #3a3a3a;
-  padding: 15px;
-  margin: 10px 0;
+/* Section styling */
+section {
+  background-color: #f5f5f5; /* light gray for separation */
+  padding: 20px 25px;
+  margin-bottom: 20px;
   border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-left: 4px solid #0d6efd; /* subtle left border for style */
 }
 
-.movie-title {
-  font-weight: bold;
+section h2 {
+  color: #0d6efd;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.genre {
-  font-style: italic;
-  margin-left: 10px;
-  color: #bbb;
-}
-
-.watched-btn {
-  background: #28a745;
-  border: none;
-  padding: 8px 12px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.watched-btn:hover {
-  background: #34d058;
+section p {
+  font-size: 1rem;
+  color: #111111;
 }
 
 /* Footer */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #111;
-  color: #888;
   text-align: center;
+  margin-top: 40px;
   padding: 15px;
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 8px;
 }
