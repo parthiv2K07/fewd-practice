@@ -1,20 +1,40 @@
-/* Reset default styles */
+/* ========== Global Reset ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
-body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  background-color: #ffffff;
-  color: #111111;
-  line-height: 1.7;
-  padding: 20px;
+/* ========== Theme Variables ========== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f5f5f5;
+  --accent-color: #0d6efd;
+  --footer-bg: #0d6efd;
+  --footer-text: #ffffff;
 }
 
-/* Header */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --accent-color: #4da3ff;
+  --footer-bg: #1f1f1f;
+  --footer-text: #dddddd;
+}
+
+/* ========== Body & Base Layout ========== */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  padding: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ========== Header Section ========== */
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -22,78 +42,21 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #0d6efd; /* Blue heading */
+  color: var(--accent-color);
   margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1rem;
-  color: #555555;
-}
-
-/* Main content */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Section styling */
-section {
-  background-color: #f5f5f5; /* light gray for separation */
-  padding: 20px 25px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border-left: 4px solid #0d6efd; /* subtle left border for style */
-}
-
-section h2 {
-  color: #0d6efd;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-section p {
-  font-size: 1rem;
-  color: #111111;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 15px;
-  background-color: #0d6efd;
-  color: #ffffff;
-  border-radius: 8px;
-}
-/* Define light mode variables (default) */
-:root {
-  --bg-color: #ffffff;
-  --text-color: #111111;
-  --card-bg: #f5f5f5;
-  --accent-color: #0d6efd;
-}
-
-/* Define dark mode theme */
-.dark-mode {
-  --bg-color: #121212;
-  --text-color: #f1f1f1;
-  --card-bg: #1e1e1e;
-  --accent-color: #4da3ff;
-}
-
-/* Apply variables to the body and elements */
-body {
-  background-color: var(--bg-color);
+  font-size: 1.1rem;
   color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
 }
 
-section {
-  background-color: var(--card-bg);
-  border-left: 4px solid var(--accent-color);
-}
-
-header h1, section h2 {
-  color: var(--accent-color);
-}
+/* ========== Theme Toggle Button ========== */
+#theme-toggle {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;

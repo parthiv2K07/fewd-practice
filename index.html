@@ -103,21 +103,27 @@
       <h2>1.18 CSS Box Model</h2>
       <p>The Box Model defines spacing for each element: content, padding, border, margin. Understanding this is essential for layout design and positioning elements properly.</p>
     </section>
-    <script>
+  <script>
   const toggleButton = document.getElementById("theme-toggle");
   const body = document.body;
 
+  // Load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    toggleButton.textContent = "☀️ Light Mode";
+  }
+
   toggleButton.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
-    
-    // Change button text
-    if (body.classList.contains("dark-mode")) {
-      toggleButton.textContent = "☀️ Light Mode";
-    } else {
-      toggleButton.textContent = "🌙 Dark Mode";
-    }
+
+    const isDark = body.classList.contains("dark-mode");
+    toggleButton.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+
+    // Save preference
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   });
 </script>
+
 
   </main>
 
