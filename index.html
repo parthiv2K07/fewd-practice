@@ -8,6 +8,7 @@
 </head>
 <body>
   <header>
+    <button id="theme-toggle">🌙 Dark Mode</button>
     <h1>My Frontend Web Development Journey</h1>
     <p>Documenting the topics and concepts I have learned in Module I: HTML & CSS Basics</p>
   </header>
@@ -102,6 +103,22 @@
       <h2>1.18 CSS Box Model</h2>
       <p>The Box Model defines spacing for each element: content, padding, border, margin. Understanding this is essential for layout design and positioning elements properly.</p>
     </section>
+    <script>
+  const toggleButton = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  toggleButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    
+    // Change button text
+    if (body.classList.contains("dark-mode")) {
+      toggleButton.textContent = "☀️ Light Mode";
+    } else {
+      toggleButton.textContent = "🌙 Dark Mode";
+    }
+  });
+</script>
+
   </main>
 
   <footer>

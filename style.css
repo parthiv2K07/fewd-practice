@@ -66,3 +66,34 @@ footer {
   color: #ffffff;
   border-radius: 8px;
 }
+/* Define light mode variables (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f5f5f5;
+  --accent-color: #0d6efd;
+}
+
+/* Define dark mode theme */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --accent-color: #4da3ff;
+}
+
+/* Apply variables to the body and elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section {
+  background-color: var(--card-bg);
+  border-left: 4px solid var(--accent-color);
+}
+
+header h1, section h2 {
+  color: var(--accent-color);
+}
