@@ -9,8 +9,9 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #111111;
-  --card-bg: #f5f5f5;
+  --card-bg: #fdfdfd;
   --accent-color: #0d6efd;
+  --border-color: #0d6efd;
   --footer-bg: #0d6efd;
   --footer-text: #ffffff;
 }
@@ -20,17 +21,18 @@
   --text-color: #f1f1f1;
   --card-bg: #1e1e1e;
   --accent-color: #4da3ff;
+  --border-color: #4da3ff;
   --footer-bg: #1f1f1f;
   --footer-text: #dddddd;
 }
 
 /* ========== Body & Base Layout ========== */
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.7;
-  padding: 20px;
+  padding: 20px 10%;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
@@ -49,6 +51,7 @@ header h1 {
 header p {
   font-size: 1.1rem;
   color: var(--text-color);
+  opacity: 0.9;
 }
 
 /* ========== Theme Toggle Button ========== */
@@ -56,8 +59,72 @@ header p {
   background-color: var(--accent-color);
   color: #fff;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 18px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+#theme-toggle:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ========== Section Styling ========== */
+section {
+  background-color: var(--card-bg);
+  border-left: 5px solid var(--border-color);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+}
+
+section h2 {
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+section p {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+/* ========== Footer Section ========== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  border-radius: 8px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+footer p {
+  font-size: 0.95rem;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  #theme-toggle {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
 }
