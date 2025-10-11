@@ -19,10 +19,30 @@
       <p>This lesson provides an introduction to the course, explaining the roadmap, objectives, and learning outcomes. It helps students understand what frontend development entails and how the modules are structured.</p>
     </section>
 
-    <section>
-      <h2>1.2 What is Frontend web development?</h2>
-      <p>Frontend development is about creating the user interface of a website — what users see and interact with. HTML defines structure, CSS defines style, and JavaScript defines behavior. This lesson explains how these technologies work together.</p>
+    <section id="unit-1-2">
+      <h2>1.2 What is Frontend Web Development?</h2>
+      <p><strong>Frontend web development</strong></p>
+      <p>Frontend web development is about creating the part of a website that users see and interact with. It uses three main technologies — HTML, CSS, and JavaScript.</p>
+
+      <h3>The Trio of Frontend</h3>
+      <ul>
+        <li><strong>HTML</strong> – gives structure to a webpage (like a skeleton).</li>
+        <li><strong>CSS</strong> – adds color and design (like clothes).</li>
+        <li><strong>JavaScript</strong> – adds movement and interactivity (like actions).</li>
+     </ul>
+
+     <h3>Example</h3>
+     <p>A simple “Hello World” webpage uses:</p>
+     <ul>
+      <li><strong>HTML</strong> to display the text</li>
+      <li><strong>CSS</strong> to color it</li>
+      <li><strong>JavaScript</strong> to show a popup message</li>
+     </ul>
+
+     <h3>🧠 What I Learned</h3>
+     <p>I learned that HTML builds the structure, CSS adds style, and JavaScript makes the webpage interactive. These three together create the complete frontend experience for users.</p>
     </section>
+
 
     <section>
       <h2>1.3 Building a Hobbies Webpage</h2>
@@ -59,31 +79,216 @@
       <p>This lesson is a practical exercise to reinforce Git commands: forking, cloning, and raising pull requests to simulate real-world collaboration.</p>
     </section>
 
-    <section>
+    <section id="unit-1-10">
       <h2>1.10 Introduction to HTML</h2>
-      <p>HTML (HyperText Markup Language) is the backbone of web development. Learned basic structure of HTML document, common tags, and attributes. HTML provides the skeleton of a webpage.</p>
-    </section>
+      <p>In this lesson, I learned about <strong>HTML (HyperText Markup Language)</strong>, which is the basic structure of every webpage.</p>
+      <h3>Learning Goals 🎯</h3>
+      <ul>
+        <li>Understand the basics of HTML</li>
+        <li>Learn the anatomy of an HTML element</li>
+        <li>Understand the structure of an HTML document</li>
+      </ul>
 
-    <section>
+      <h3>What is HTML?</h3>
+      <p>HTML defines how content is displayed on web pages. <br><br>
+      <strong>HyperText</strong> means the text can contain links (hyperlinks).  
+      <strong>Markup Language</strong> means using tags to format and structure content.
+      </p>
+
+      <h3>Example of an HTML Tag</h3>
+      <p>Tags are written inside angle brackets and mostly come in pairs like this:</p>
+      <pre><code>&lt;p&gt;You are a Super Cool Developer!&lt;/p&gt;</code></pre>
+      <p>This tag displays text as a paragraph on the webpage.</p>
+
+      <h3>Self-Closing Tags</h3>
+      <p>Some tags don’t need a closing tag. For example:</p>
+      <pre><code>&lt;br&gt;   <!-- line break -->
+      &lt;img src="image.jpg" alt="Example Image"&gt;</code></pre>
+
+      <h3>Structure of an HTML Document</h3>
+      <p>This is the basic structure of any HTML page:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;My First Webpage&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+          &lt;p&gt;Welcome to my first webpage.&lt;/p&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+      </code></pre>
+
+      <h3>Explanation</h3>
+      <ul>
+        <li><strong>&lt;!DOCTYPE html&gt;</strong> – Defines the HTML version.</li>
+        <li><strong>&lt;html&gt;</strong> – Root element that wraps the content.</li>
+        <li><strong>&lt;head&gt;</strong> – Contains information about the webpage.</li>
+        <li><strong>&lt;body&gt;</strong> – Holds all the visible content.</li>
+      </ul>
+
+      <h3>What I Learned 🧠</h3>
+      <p>I learned that HTML provides the structure for all websites. Each element is defined by tags, and together they form a complete webpage. I also understood how an HTML document is organized using <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections.
+      </p>
+     </section>
+  
+     <section id="unit-1-11">
       <h2>1.11 HTML Block & Inline Elements</h2>
-      <p>HTML elements are either block-level or inline. Block elements start on a new line and take full width (div, p, section), while inline elements stay within a line and take only the necessary width (span, a, strong). Understanding these helps structure content and layout.</p>
-    </section>
+      <p>
+      In this lesson, I learned about the difference between
+      <strong>block</strong> and <strong>inline</strong> elements in HTML.
+      Understanding how they behave helps in structuring and styling web pages correctly.
+      </p>
 
-    <section>
-      <h2>1.12 HTML Lists</h2>
-      <p>Lists organize information: ordered lists (<ol>) are numbered, unordered lists (<ul>) use bullets, and description lists (<dl>) have terms (<dt>) and descriptions (<dd>). Useful for menus, steps, or repeated content.</p>
-    </section>
+      <h3>Block Elements</h3>
+      <p>
+      Block elements take up the entire width of the page and always start on a new line.
+      Common examples include headings, paragraphs, and divs.
+      </p>
 
-    <section>
-      <h2>1.13 Introduction to CSS</h2>
-      <p>CSS (Cascading Style Sheets) controls how a webpage looks. Linked to HTML, it changes colors, fonts, backgrounds, and layout. CSS separates content from style for cleaner code.</p>
-    </section>
+      <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph&lt;/p&gt;
+      &lt;div&gt;This is a block div&lt;/div&gt;</code></pre>
 
-    <section>
-      <h2>1.14 Styling Elements using CSS selectors</h2>
-      <p>CSS selectors target elements to apply styles. Examples: element selector (p {color: blue;}), class selector (.title {}), ID selector (#header {}). Selectors allow precise styling and customization.</p>
-    </section>
+      <p>
+      Each of these starts on a new line and stretches across the page, creating a clear structure in the layout.
+      </p>
 
+      <h3>Inline Elements</h3>
+      <p>Inline elements only take up as much space as needed and sit within block elements. They’re useful for styling parts of text or adding links inside a paragraph.
+      </p>
+      <pre><code>
+      &lt;span&gt;This is a span&lt;/span&gt;
+      &lt;a href="#"&gt;This is a link&lt;/a&gt;
+      &lt;strong&gt;This is bold&lt;/strong&gt;</code></pre>
+
+      <p>
+      These stay within the same line of text — perfect for highlighting or linking content without breaking the flow.
+      </p>
+      <h3>Visual Difference</h3>
+      <p>
+      When displayed on a webpage, block elements stack one below the other, while inline elements appear next to each other on the same line.
+      </p>
+      <h3>What I Learned 🧠</h3>
+      <p>I learned that block elements structure the layout by creating sections, while inline elements style or emphasize content within those sections.Knowing when to use each type is essential for clean and organized web design.
+      </p>
+   </section>
+   <section id="unit-1-12">
+     <h2>1.12 HTML Lists</h2>
+     <p>
+     In this lesson, I learned how to use lists in HTML to organize and present information neatly. Lists make webpages more structured and easy to follow.
+     </p>
+     <h3>Unordered Lists</h3>
+     <p>
+     Unordered lists are used when the order of items doesn’t matter. I can use them to show topics, tools, or collections.
+     </p>
+     <h4>Frontend Topics I’ve Learned</h4>
+     <ul>
+       <li>HTML Basics</li>
+       <li>CSS Styling</li>
+       <li>Git and GitHub</li>
+       <li>Responsive Design</li>
+     </ul>
+
+     <h3>Ordered Lists</h3>
+      <p>
+      Ordered lists are used when the order is important — like steps or processes. I used them to understand how a webpage is built step by step.
+      </p>
+
+     <h4>Steps to Create a Simple Webpage</h4>
+     <ol>
+       <li>Create an HTML file</li>
+       <li>Add structure using HTML tags</li>
+       <li>Style it using CSS</li>
+       <li>Add interactivity using JavaScript</li>
+      </ol>
+
+     <h3>Description Lists</h3>
+     <p>
+      Description lists are used to define terms and meanings. They helped me understand key web development concepts clearly.
+     </p>
+
+     <h4>Frontend Concepts Explained</h4>
+     <dl>
+       <dt><strong>HTML</strong></dt>
+       <dd>Defines the structure and layout of a webpage.</dd>
+       <dt><strong>CSS</strong></dt>
+       <dd>Controls the design, colors, and visual appearance.</>
+       <dt><strong>JavaScript</strong></dt>
+       <dd>Adds behavior and interactivity to webpages.</dd>
+     </dl>
+
+     <h3>What I Learned 🧠</h3>
+     <p>
+     I learned that:
+     </p>
+     <ul>
+       <li><strong>Unordered lists</strong> are for collections where order doesn’t matter.</li>
+       <li><strong>Ordered lists</strong> are for steps or sequences.</li>
+       <li><strong>Description lists</strong> are for explaining key terms and their meanings.</li>
+     </ul>
+
+     <p>
+      Using these list types makes my webpage content cleaner and more readable.
+     </p>
+   </section>
+   <section>
+    <h2>1.13 Introduction to CSS</h2>
+    <p>CSS (Cascading Style Sheets) controls how a webpage looks. Linked to HTML, it changes colors, fonts, backgrounds, and layout. CSS separates content from style for cleaner code.</p>
+   </section>
+
+    <section id="unit-1-13">
+     <h2>1.13 CSS Selectors</h2>
+
+     <p>
+     In this lesson, I learned how to use CSS selectors to style specific parts of a webpage. Selectors help target elements so each one can have a unique look.
+     </p>
+
+     <h3>What are CSS Selectors?</h3>
+     <p>
+      Selectors are like giving instructions to the browser about which elements to style. Without them, every element would look the same!
+     </p>
+
+     <h3>Tag Selectors</h3>
+     <p>
+      Tag selectors style all elements of a particular type.  
+      Example: Making all headings green and all paragraphs larger.
+     </p>
+
+      <pre><code>h1 {
+        color: green;
+      }
+
+      p {
+        font-size: 18px;
+      }
+      </code></pre>
+      <h3>Class Selectors</h3>
+      <p>
+      Class selectors style elements with a specific class attribute. This allows multiple elements to share the same
+      style.
+      </p>
+      <pre><code>.highlight {
+        background-color: yellow;
+      }
+      </code></pre>
+      <h3>ID Selectors</h3>
+      <p>
+      ID selectors style a single element with a specific id attribute. This is useful for unique elements that need distinct styling.
+      </p>
+      <pre><code>#main-title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      </code></pre>
+      <h3>Pseudo-Class Selectors</h3>
+      <p>
+      Pseudo-class selectors style elements based on their state or position. For example, changing link colors when hovered over.
+      </p>
+      <pre><code>a:hover {
+        color: red;
+      }</code></pre>
+    </section>
     <section>
       <h2>1.15 CSS Diner | Group Activity</h2>
       <p>This was a practical activity to reinforce CSS selectors. (Can skip in webpage if needed.)</p>
