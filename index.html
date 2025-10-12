@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <button id="theme-toggle">🌙 Dark Mode</button>
+   
     <h1>My Frontend Web Development Journey</h1>
     <p>Documenting the topics and concepts I have learned in Module I: HTML & CSS Basics</p>
   </header>
@@ -288,46 +288,396 @@
       <pre><code>a:hover {
         color: red;
       }</code></pre>
+      <h3>What I Learned 🧠</h3>
+      <ul>
+        </li>Tag selectors are for all elements of a type.</li>
+        <li>Class selectors are for groups of elements with a common role.</li>
+        <li>ID selectors are for a unique element.</li>
+        <li>Pseudo-classes are for states or interactions.</li>
+        <li>CSS selectors give me precise control, like a director controlling each actor on stage. Knowing how to use them lets me make web pages look exactly the way I want.</li>
+      </ul>
     </section>
     <section>
       <h2>1.15 CSS Diner | Group Activity</h2>
-      <p>This was a practical activity to reinforce CSS selectors. (Can skip in webpage if needed.)</p>
+      <p>This was a practical activity to reinforce CSS selectors. </p>
     </section>
-
     <section>
-      <h2>1.16 HTML Tables</h2>
-      <p>Tables structure data in rows and columns: table, tr, th, td. Attributes like colspan and rowspan merge cells. Tables are used for schedules, pricing charts, and data presentation.</p>
-    </section>
+      <p>In this lesson, I learned how to organize data neatly on a webpage using <strong>HTML tables</strong>.
+         Tables are really useful when I want to display structured information like schedules, results, or comparison charts.
+         I understood that tables help present data clearly, just like rows and columns in a spreadsheet.
+      </p>
+      <h3>Lesson Outcomes</h3>
+      <ul>
+        <li>Understand the basic tags for creating tables.</li>
+        <li>Use headers to label columns and rows.</li>
+        <li>Merge cells using colspan and rowspan.</li>
+      </ul>
 
+      <h3>The Blueprint: The Table Structure</h3>
+      <p>The <strong>&lt;table&gt;</strong> tag is the container for all your table content. Inside it, we use:</p>
+      <ul>
+        <li><strong>&lt;tr&gt;</strong> — defines a row.</li>
+        <li><strong>&lt;td&gt;</strong> — defines a cell for data.</li>
+        <li><strong>&lt;th&gt;</strong> — defines a header cell for titles or labels.</li>
+      </ul>
+
+      <h3>Example 1: A Simple Table</h3>
+      <table border="2px">
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+        </tr>
+      </table>
+
+      <h3>Example 2: Table with Headers</h3>
+      <table border="2px">
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+        </tr>
+        <tr>
+          <td>9:00 AM</td>
+          <td>Math</td>
+          <td>Science</td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td>English</td>
+          <td>History</td>
+        </tr>
+      </table>
+
+      <h3>Example 3: Table Using Colspan</h3>
+      <p>Use <strong>colspan</strong> when you want one cell to stretch across multiple columns.</p>
+      <table border="2px">
+        <tr>
+          <th colspan="3">Weekly Schedule</th>
+        </tr>
+        <tr>
+          <th>Day</th>
+          <th>Morning</th>
+          <th>Afternoon</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Math</td>
+          <td>Science</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>English</td>
+          <td>History</td>
+        </tr>
+      </table>
+
+      <h3>Example 4: Table Using Rowspan</h3>
+      <p>Use <strong>rowspan</strong> to make a cell span multiple rows.</p>
+      <table border="2px">
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+          <th>Day</th>
+        </tr>
+        <tr>
+          <td rowspan="2">11:00 AM</td>
+          <td rowspan="2">Break</td>
+          <td>Monday</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+        </tr>
+      </table>
+
+      <h3>Summary</h3>
+      <p>HTML tables organize data clearly. Here’s a quick recap:</p>
+      <ul>
+        <li><strong>&lt;table&gt;</strong> — defines the table.</li>
+        <li><strong>&lt;tr&gt;</strong> — defines each row.</li>
+        <li><strong>&lt;td&gt;</strong> — defines a data cell.</li>
+        <li><strong>&lt;th&gt;</strong> — defines a header cell.</li>
+        <li><strong>colspan</strong> — merges columns.</li>
+        <li><strong>rowspan</strong> — merges rows.</li>
+      </ul>
+    </section>
     <section>
       <h2>1.17 HTML Forms</h2>
-      <p>Forms collect user input: form wraps input elements, input types include text, email, password, checkbox, radio. Labels describe fields, textarea for multi-line input, button to submit. Forms are essential for login, feedback, and interaction.</p>
-    </section>
+      <p>
+        In this topic, I learned how to collect user information on a webpage using <strong>HTML forms</strong>.
+        Forms are essential when I want users to type, select, or submit any kind of data like names, colors, or feedback.
+      </p>
 
+      <h3>What I Learned</h3>
+      <ul>
+        <li>How to define a form using <strong>&lt;form&gt;</strong> and <strong>&lt;/form&gt;</strong> tags.</li>
+        <li>Different types of inputs like text boxes, radio buttons, checkboxes, and dropdowns.</li>
+        <li>How to use the <strong>action</strong> attribute to send data for processing.</li>
+      </ul>
+
+      <h3>Creating a Simple Form</h3>
+      <p>
+        Every form starts with a basic structure where all the input elements are placed between 
+        <strong>&lt;form&gt;</strong> and <strong>&lt;/form&gt;</strong>.
+      </p>
+      <table>
+        <tr>
+          <th>Tag</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>&lt;form&gt;</td>
+          <td>Defines the start and end of a form.</td>
+        </tr>
+        <tr>
+          <td>&lt;input&gt;</td>
+          <td>Creates input fields for user data.</td>
+        </tr>
+        <tr>
+          <td>&lt;select&gt;</td>
+          <td>Creates a dropdown list.</td>
+        </tr>
+        <tr>
+          <td>&lt;option&gt;</td>
+          <td>Specifies options inside a dropdown.</td>
+        </tr>
+      </table>
+
+      <h3>Text Input</h3>
+      <p>
+        I learned that the <strong>text input</strong> allows users to enter single-line text such as names or emails.
+      </p>
+      <table>
+        <tr>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="username" placeholder="Enter your name"></td>
+        </tr>
+      </table>
+
+      <h3>Radio Buttons</h3>
+      <p>
+        Radio buttons let users select only one option from a group.
+        All buttons in the same group share the same <strong>name</strong>.
+      </p>
+      <table>
+        <tr>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="color" value="red"> Red  
+            <input type="radio" name="color" value="green"> Green  
+            <input type="radio" name="color" value="blue" checked> Blue
+          </td>
+        </tr>
+      </table>
+
+      <h3>Checkbox</h3>
+      <p>
+        Checkboxes allow multiple selections.
+        I can preselect a checkbox using the <strong>checked</strong> attribute.
+      </p>
+      <table>
+        <tr>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="interest" value="music"> Music  
+            <input type="checkbox" name="interest" value="sports" checked> Sports  
+            <input type="checkbox" name="interest" value="art"> Art
+          </td>
+        </tr>
+      </table>
+
+      <h3>Dropdown Menu</h3>
+      <p>
+        Dropdowns are useful when I want users to pick from a list of options.
+        The selected option can be marked with <strong>selected</strong>.
+      </p>
+      <table>
+        <tr>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>
+            <select name="color">
+              <option value="red">Red</option>
+              <option value="green" selected>Green</option>
+              <option value="blue">Blue</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <h3>Submitting the Form</h3>
+      <p>
+        I learned that forms send data to another page or script using the <strong>action</strong> attribute.
+        The data is sent when the user clicks the <strong>Submit</strong> button.
+      </p>
+      <table>
+        <tr>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>
+            <form action="#">
+              First name: <input type="text" name="first_name" maxlength="100"><br><br>
+              Last name: <input type="text" name="last_name" maxlength="100"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </td>
+        </tr>
+      </table>
+
+      <h3>My Practice</h3>
+      <p>
+        I practiced creating a simple form to collect my friends’ LinkedIn profiles and their interest in connecting.
+        It helped me understand how different inputs work together in a real form.
+      </p>
+
+      <h3>Summary</h3>
+      <p>
+        From this lesson, I learned how to create forms using different input types — text boxes, radio buttons,
+        checkboxes, and dropdowns. I also understood how the <strong>action</strong> attribute works and how to
+        build a complete form from scratch.
+      </p>
+    </section>
     <section>
-      <h2>1.18 CSS Box Model</h2>
-      <p>The Box Model defines spacing for each element: content, padding, border, margin. Understanding this is essential for layout design and positioning elements properly.</p>
-    </section>
-  <script>
-  const toggleButton = document.getElementById("theme-toggle");
-  const body = document.body;
+      <h2>2.1 Font & Text Properties in CSS</h2>
 
-  // Load saved theme
-  if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-mode");
-    toggleButton.textContent = "☀️ Light Mode";
-  }
+      <p>In this lesson, I learned how CSS allows me to style text and control its appearance on a webpage. Typography is important for readability and making the page visually appealing, so understanding font and text properties is essential.</p>
 
-  toggleButton.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
+     <h3>Lesson Outcomes</h3>
+     <ul>
+       <li>Identify different CSS properties used to control font appearance (style, size, and weight).</li>
+       <li>Apply CSS properties to adjust text layout (alignment, spacing, decoration).</li>
+       <li>Choose appropriate font families for different contexts (serif, sans-serif, monospace).</li>
+       <li>Understand the impact of typography on readability and user experience.</li>
+       <li>Combine multiple text and font properties to create styled text elements.</li>
+     </ul>
 
-    const isDark = body.classList.contains("dark-mode");
-    toggleButton.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+     <h3>Font Families</h3>
+     <p>I learned that font families are like outfits for text. Serif fonts have small "feet" (e.g., Times New Roman, Georgia) and look formal. Sans-serif fonts have no feet (e.g., Arial, Helvetica) and look clean and modern. Monospace fonts (e.g., Courier New) make each letter the same width and are ideal for code.</p>
+     <p>The <code>font-family</code> property lets me specify which font to use and provide fallback options. For example:</p>
+     <pre><code>font-family: "Courier New", Courier, monospace;</code></pre>
 
-    // Save preference
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  });
-</script>
+     <h3>Font Size, Weight, and Style</h3>
+     <ul>
+       <li><strong>font-size</strong> – Controls the size of text. Can use <code>px</code>, <code>em</code>, or <code>rem</code>.</li>
+       <li><strong>font-weight</strong> – Controls thickness or boldness (values: normal, bold, or 100–900).</li>
+       <li><strong>font-style</strong> – Controls slanting: <code>normal</code>, <code>italic</code>, or <code>oblique</code>.</li>
+     </ul>
+
+     <h3>Text Properties</h3>
+     <ul>
+       <li><strong>text-align</strong> – Align text: left, right, center, or justify.</li>
+       <li><strong>text-decoration</strong> – Add/remove lines: none, underline, overline, line-through.</li>
+       <li><strong>line-height</strong> – Space between lines (e.g., 1.5 for readability).</li>
+      <li><strong>text-transform</strong> – Change capitalization: uppercase, lowercase, capitalize, none.</li>
+     </ul>
+
+     <h3>Example: Styling a Promo Box</h3>
+     <p>I practiced combining font and text properties using the following HTML structure:</p>
+     <pre><code>&lt;div class="promo-box"&gt;
+     &lt;h2&gt;Special Offer!&lt;/h2&gt;
+     &lt;p&gt;Limited time discount on all items.&lt;/p&gt;
+     &lt;a href="#"&gt;Learn More&lt;/a&gt; 
+     &lt;/div&gt;</code></pre>
+     <p>Using CSS, I could:</p>
+     <ul>
+       <li>Make the <code>&lt;h2&gt;</code> text centered, bold, and uppercase.</li>
+       <li>Give the <code>&lt;p&gt;</code> text a comfortable line height (e.g., 1.5).</li>
+        <li>Style the <code>&lt;a&gt;</code> link to be blue and remove the underline.</li>
+     </ul>
+
+     <h3>What I Learned 🧠</h3>
+    <p>I learned how to choose the right "outfit" for my text with font-family, adjust the "fit" using font-size, font-weight, and font-style, and arrange text neatly using text-align, text-decoration, line-height, and text-transform. These properties give me full control over how text looks and improves the readability and overall design of my webpages.</p>
+     </section>
+     <section >
+       <h2>2.2 CSS Inheritance</h2>
+ 
+       <p>In this lesson, I learned about CSS inheritance, which allows child elements to inherit certain property values from their parent elements. Understanding inheritance helps me write cleaner and more efficient CSS.</p>
+
+       <h3>What I Learned</h3>
+       <p>Inheritance in CSS works similarly to how children inherit traits from their parents. For example, if I set a property on a parent element, its child elements may inherit that property automatically.</p>
+
+       <h3>Example</h3>
+       <p>HTML:</p>
+       <pre><code>&lt;p&gt;I am a &lt;strong&gt;KALVIAN&lt;/strong&gt;&lt;/p&gt;</code></pre>
+       <p>CSS:</p>
+       <pre><code>p {
+        color: red;
+        }
+        strong {
+        font-size: 16px;
+       }</code></pre>
+       <p>Result: The entire sentence appears red because the <code>&lt;strong&gt;</code> tag inherits the <code>color: red;</code> property from its parent <code>&lt;p&gt;</code> element.</p>
+
+       <h3>Important Notes</h3>
+       <ul>
+          <li>Not all CSS properties are inherited. For example, <code>border</code> is not inherited by default.</li>
+         <li>Commonly inherited properties include: <code>color</code>, <code>direction</code>, <code>font-family</code>, <code>font-size</code>, <code>font-style</code>, <code>font-weight</code>, <code>line-height</code>, <code>text-align</code>, and several others.</li>
+         <li>Understanding which properties inherit helps avoid unintended styles on child elements.</li>
+         </ul>
+ 
+       <h3>Practice</h3>
+       <p>I practiced CSS inheritance using a web playground like Stackblitz to see how properties propagate from parent to child elements and which properties are not inherited.</p>
+
+       h3>Summary 🗒️</h3>
+       <p>In this lesson, I learned the concept of CSS inheritance, how child elements inherit certain properties from their parent elements, and the importance of knowing which properties are inheritable to write efficient CSS.</p>
+     </section>
+     <section>
+       <h2>2.3 CSS Positioning</h2>
+
+        <p>In this lesson, I learned how to control the exact placement of elements on a webpage using CSS positioning. Instead of letting the browser decide the layout, I can now place elements exactly where I want.</p>
+
+       <h3>CSS Positioning Types</h3>
+
+       <h4>1. Static (default)</h4>
+       <p>By default, every element has <code>position: static;</code>. Elements appear in the order they are written in HTML, from top to bottom. You cannot move them using top, bottom, left, or right.</p>
+
+       <h4>2. Relative</h4>
+       <p>With <code>position: relative;</code>, elements stay in their normal flow but can be nudged using <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>.</p>
+       <div class="relative-box">Relative Box</div>
+
+       <h4>3. Absolute</h4>
+       <p>Absolute positioning removes the element from the normal flow. It is positioned relative to the nearest parent with a position other than static. If no parent is positioned, it will use the browser window as reference.</p>
+       <div class="container">
+        Container
+        <div class="absolute-box">Absolute Box</div>
+       </div>
+
+       <h4>4. Fixed</h4>
+       <p>Fixed elements stay in place relative to the browser viewport. They do not move when the page scrolls.</p>
+       <div class="fixed-box">Fixed Box</div>
+
+       <h4>5. Sticky</h4>
+       <p>Sticky elements act like relative until they reach a scroll threshold, then they stick like fixed.</p>
+       <div class="sticky-box">Sticky Box</div>
+        <p>Scroll down to see sticky in action.</p>
+
+       <h3>Z-Index</h3>
+       <p>Z-index controls which overlapping elements appear in front. Only works on positioned elements.</p>
+       <div class="z-index-box">Box 1</div>
+       <div class="z-index-box2">Box 2</div>
+
+       <h3>Summary 🗒️</h3>
+       <ul>
+         <li>I learned what CSS positioning is and how it lets me control element placement.</li>
+         <li>Static, Relative, Absolute, Fixed, and Sticky are the main types of positioning.</li>
+         <li>Z-index allows control of overlapping elements by stacking order.</li>
+       </ul>
+     </section>
+
+    
+
+    
 
 
   </main>
