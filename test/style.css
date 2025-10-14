@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; 
+    box-sizing: border-box;
+}
+header{
+    
+    padding: 25px;
+    text-align: center;
+    color:#ff0000;
+    font-family: 'Friz Quadrata';
+    font-weight: bold;
+;
+}
+body {
+    background-color: #ffffff;  /* Dark background */
+    color: #000000;             /* Light text */
+    line-height: 1.7;
+    padding: 20px 10%;
+}
+section {
+    color: rgb(0, 0, 0);
+    border-left: 5px solid #ff0000;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    align-items: flex-start; /* left align text */
+    gap: 10px; /* space between elements */
+}
+
+section button {
+    background-color: #ff0000;
+    color: white;
+    border: 2px solid transparent; /* reserve space for hover border */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+    align-self: flex-end; /* move button to right side */
+}
+
+section button:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    border-color: #ff0000; /* border appears smoothly */
+}
+
+h1{
+    font-weight: bold;
+    color: red;
+   
+}
+@font-face {
+      font-family: 'Friz Quadrata';
+      src: url('fonts/FrizQuadrata-Regular.woff2') format('woff2'),
+           url('fonts/FrizQuadrata-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Friz Quadrata';
+      src: url('fonts/FrizQuadrata-Bold.woff2') format('woff2'),
+           url('fonts/FrizQuadrata-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+    }
+header h1 {
+    font-family: 'Friz Quadrata';
+    font-size: 2.5rem;
+    color: #ff0000;  /* Blue accent */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+    
+section button:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    border: 2px solid #ff0000; /* Black border on hover */
+
+}
+section h2 {
+    margin-bottom: 5px; /* reduce space below the heading */
+    color: #ff0000;      /* optional: match style */
+}
+
+section p {
+    margin-top: 0; /* remove extra top margin */
+}
